@@ -34,6 +34,7 @@ html {
   color: white;
   padding-left: 1rem;
   padding-right: 1rem;
+  font-style: bold;
 }
 
 .nav-item:hover,
@@ -49,6 +50,12 @@ html {
   padding-right: 0.2rem;
 }
 
+.nav-icon:hover,
+.nav-icon:focus {
+  fill: orange;
+  cursor: pointer;
+}
+
 .nav-icon-wrapper {
   margin-left: 1.5rem;
 }
@@ -57,3 +64,9 @@ html {
   width: 10vw;
   margin-left: 1vw;
 }
+
+.nav-logo:hover {
+  cursor: pointer;
+}
+
+/* HOME */
