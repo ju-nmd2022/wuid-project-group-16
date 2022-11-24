@@ -1,9 +1,17 @@
-/* GENERAL */
 body,
 html {
   margin: 0;
   background-color: black;
   font-family: Helvetica, sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "main main main main";
+  height: 100vh;
 }
 
 /* NAVIGATION */
@@ -14,8 +22,10 @@ html {
   justify-content: space-between;
   align-content: center;
   flex-wrap: wrap;
-  padding: 2.5rem;
+  padding: 2rem;
   font-style: bold;
+  grid-area: nav;
+  max-height: 7vh;
 }
 
 .nav-left {
@@ -34,7 +44,6 @@ html {
   color: white;
   padding-left: 1rem;
   padding-right: 1rem;
-  font-style: bold;
 }
 
 .nav-item:hover,
@@ -50,12 +59,6 @@ html {
   padding-right: 0.2rem;
 }
 
-.nav-icon:hover,
-.nav-icon:focus {
-  fill: orange;
-  cursor: pointer;
-}
-
 .nav-icon-wrapper {
   margin-left: 1.5rem;
 }
@@ -65,8 +68,64 @@ html {
   margin-left: 1vw;
 }
 
-.nav-logo:hover {
+.main {
+  display: grid;
+  grid-area: main;
+  background-color: rgb(0, 0, 0);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 9fr 1fr;
+  grid-template-areas:
+    "  main_content . "
+    " . chatbox ";
+  justify-items: center;
+  color: #ffffff;
+  background-image: url(coffee-g782ce509c_1920\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: flex-start;
+  margin-left: 5%;
+}
+
+.main_content {
+  grid-area: main_content;
+}
+.chatbox {
+  grid-area: chatbox;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.chat {
+  grid-area: chat;
+  width: 49px;
+  height: 49px;
+  left: 1165px;
+  top: 783px;
+  background: #e37a2d;
+  border-radius: 16px 16px 0px 0px;
+}
+.btn_more {
+  box-sizing: border-box;
+
+  width: 155px;
+  height: 32px;
+  left: 1056px;
+  top: 471px;
+
+  background: #5a5a5a;
+  border: 2px solid #ffffff;
+  border-radius: 19px;
+  color: #ffffff;
   cursor: pointer;
+  margin-top: 50px;
+}
+h1 {
+  font-size: 60pt;
+}
+.intro {
+  max-width: 400px;
 }
 
 /* HOME */
