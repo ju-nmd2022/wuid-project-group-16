@@ -3,6 +3,7 @@ html {
   margin: 0;
   background-color: black;
   font-family: Helvetica, sans-serif;
+  /* here we have to change it so that it's some kinda google font other whise it doesnt work on windows and linux */
 }
 .hcontainer {
   display: grid;
