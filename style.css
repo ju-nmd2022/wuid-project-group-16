@@ -143,6 +143,75 @@ h1 {
   background: #e37a2d;
   border-radius: 4px;
 }
+
+/* HOME */
+.pcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 187.4px auto;
+  grid-template-areas:
+    "nav nav nav nav"
+    "header header header header"
+    "pmain pmain pmain pmain";
+}
+.header {
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  display: flex;
+  justify-content: flex-start;
+  padding-inline-start: 2%;
+  padding-inline-end: 20%;
+  justify-content: space-between;
+  height: 3.5rem;
+  grid-area: header;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.products:hover,
+.products:focus {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.beans:hover,
+.beans:focus {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.grounds:hover,
+.grounds:focus {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.instant:hover,
+.instant:focus {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.accessories:hover,
+.accessories:focus {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.pmain {
+  display: grid;
+  grid-area: pmain;
+  grid-template-columns: repeat(auto-fit, 400px);
+  gap: 3rem;
+  justify-content: center;
+}
+.pcontent {
+  background-color: rgb(202, 202, 202);
+  height: 400px;
+  border-radius: 10px;
+  cursor: pointer;
+}
 @media only screen and (min-width: 2000px) {
   h1 {
     font-size: 80pt;

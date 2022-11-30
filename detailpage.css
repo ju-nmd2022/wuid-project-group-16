@@ -17,9 +17,10 @@ html {
 }
 .content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
   grid-template-areas: ". one two .";
-  justify-content: center;
+  justify-content: space-around;
+  border-radius: 5px;
 }
 
 /* NAVIGATION */
