@@ -97,8 +97,8 @@ html {
   align-items: flex-end;
   justify-content: center;
   height: 100%;
-  width: 100%;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-right: 100px;
 }
 .chat {
   grid-area: chat;
@@ -142,29 +142,6 @@ h1 {
 ::-webkit-scrollbar-thumb {
   background: #e37a2d;
   border-radius: 4px;
-}
-
-/* HOME */
-.pcontainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 187.4px auto;
-  grid-template-areas:
-    "nav nav nav nav"
-    "pmain pmain pmain pmain";
-}
-.pmain {
-  display: grid;
-  grid-area: pmain;
-  grid-template-columns: repeat(auto-fit, 400px);
-  gap: 3rem;
-  justify-content: center;
-}
-.pcontent {
-  background-color: rgb(202, 202, 202);
-  height: 400px;
-  border-radius: 10px;
-  cursor: pointer;
 }
 @media only screen and (min-width: 2000px) {
   h1 {
@@ -212,5 +189,37 @@ h1 {
   }
 
 }
+
+/* HOME */
+.pcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 187.4px auto;
+  grid-template-areas:
+    "nav nav nav nav"
+    "pmain pmain pmain pmain";
+}
+.pmain {
+  display: grid;
+  grid-area: pmain;
+  grid-template-columns: repeat(auto-fit, 400px);
+  gap: 3rem;
+  justify-content: center;
+}
+.pcontent {
+  background-color: rgb(202, 202, 202);
+  height: 400px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.product{
+  width: 400px;
+  border-radius: 10px;
+  
+}
+.product-name{
+  
+}
+
   
 
