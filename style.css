@@ -45,10 +45,10 @@ html {
   color: white;
   padding-left: 1rem;
   padding-right: 1rem;
+  text-decoration: none;
 }
 
-.nav-item:hover,
-.nav-item:focus {
+.nav-item:hover {
   color: orange;
   text-decoration: underline;
   cursor: pointer;
