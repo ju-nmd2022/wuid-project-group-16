@@ -1,0 +1,143 @@
+body,
+html {
+  margin: 0;
+  background-color: black;
+  font-family: Helvetica, sans-serif;
+}
+.hcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "header header header header"
+    ". content content ."
+    "main main main main";
+  min-height: 100vh;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". one two .";
+  justify-content: center;
+}
+
+/* NAVIGATION */
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 2.5rem;
+  font-style: bold;
+  grid-area: nav;
+  max-height: 7vh;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-item {
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  color: orange;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.nav-icon {
+  color: white;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.nav-icon-wrapper {
+  margin-left: 1.5rem;
+}
+
+.nav-logo {
+  width: 10vw;
+  margin-left: 1vw;
+}
+
+.mainheader {
+  height: 4rem;
+}
+.header {
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  display: flex;
+  justify-content: flex-start;
+  padding-inline-start: 2%;
+  padding-inline-end: 20%;
+  justify-content: space-between;
+  max-height: 3.5rem;
+  grid-area: header;
+  align-items: center;
+}
+
+.footer {
+  background-color: black;
+  color: antiquewhite;
+}
+
+.two {
+  background-color: rgb(202, 202, 202);
+  color: black;
+  grid-area: two;
+  max-height: 30vh;
+}
+.one {
+  background-color: rgb(202, 202, 202);
+  color: black;
+  grid-area: one;
+  max-height: 30vh;
+}
+.products:hover,
+.products:focus {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.beans:hover,
+.beans:focus {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.grounds:hover,
+.grounds:focus {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.instant:hover,
+.instant:focus {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.accessories:hover,
+.accessories:focus {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
