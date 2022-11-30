@@ -97,6 +97,7 @@ html {
   justify-content: center;
   height: 100%;
   width: 100%;
+  justify-content: flex-end;
 }
 .chat {
   grid-area: chat;
@@ -106,6 +107,7 @@ html {
   top: 783px;
   background: #e37a2d;
   border-radius: 16px 16px 0px 0px;
+  margin-right: 50px;
 }
 .btn_more {
   box-sizing: border-box;
