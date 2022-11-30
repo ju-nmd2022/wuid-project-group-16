@@ -81,7 +81,7 @@ html {
     " . chatbox ";
   justify-items: center;
   color: #ffffff;
-  background-image: url(images/coffee-171653(1).png);
+  background-image: url("Images/start-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   align-items: flex-start;
@@ -162,7 +162,7 @@ h1 {
       " . chatbox ";
     justify-items: center;
     color: #ffffff;
-    background-image: url(images/coffee-171653\\(1\).png);
+    background-image: url("Images/start-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     align-items: flex-start;
@@ -190,12 +190,21 @@ h1 {
 .pcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto 200px auto;
   grid-template-areas:
     "nav nav nav nav"
     "header header header header"
+    " . . . . "
     "pmain pmain pmain pmain";
 }
+.all-products {
+  color: #ffffff;
+  margin-top: -143.09px;
+}
+.all-products-text {
+  font-size: 38pt;
+}
+
 .pmain {
   display: grid;
   grid-area: pmain;
@@ -238,7 +247,6 @@ h1 {
   height: 3.5rem;
   grid-area: header;
   align-items: center;
-  margin-bottom: 2rem;
 }
 .products:hover,
 .products:focus {
