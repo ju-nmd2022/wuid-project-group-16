@@ -149,7 +149,53 @@ h1 {
   grid-template-rows: 187.4px auto;
   grid-template-areas:
     "nav nav nav nav"
+    "header header header header"
     "pmain pmain pmain pmain";
+}
+.header {
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  display: flex;
+  justify-content: flex-start;
+  padding-inline-start: 2%;
+  padding-inline-end: 20%;
+  justify-content: space-between;
+  height: 3.5rem;
+  grid-area: header;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.products:hover,
+.products:focus {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.beans:hover,
+.beans:focus {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.grounds:hover,
+.grounds:focus {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.instant:hover,
+.instant:focus {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.accessories:hover,
+.accessories:focus {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
 }
 .pmain {
   display: grid;
