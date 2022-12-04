@@ -91,6 +91,9 @@ html {
 .main_content {
   grid-area: main_content;
 }
+.modern_h1 {
+  max-width: 601px;
+}
 .chatbox {
   grid-area: chatbox;
   display: flex;
@@ -196,6 +199,7 @@ h1 {
     "header header header header"
     " . . . . "
     "pmain pmain pmain pmain";
+    padding-bottom: 10px;
 }
 .all-products {
   color: #ffffff;
@@ -233,9 +237,44 @@ h1 {
   background-color: rgb(255, 255, 255);
   height: 150px;
   margin-top: -15%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 20px;
+  
+  
 }
-.header {
+.add{
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+.name-price{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+
+}
+.price{
+  margin-left: 0;
+  margin-top: 7px;
+
+}
+.name{
+  margin: 0;
+
+}
+.header{
+  grid-area: header;
   background-color: white;
+}
+.header-left {
+ 
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
@@ -245,39 +284,18 @@ h1 {
   padding-inline-end: 20%;
   justify-content: space-between;
   height: 3.5rem;
-  grid-area: header;
   align-items: center;
+  width: 50%;
 }
 .products:hover,
 .products:focus {
-  color: black;
-  font-weight: bold;
+  color: #e37a2d;
   cursor: pointer;
+  text-decoration-line: underline;
+  
 }
-.beans:hover,
-.beans:focus {
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-}
-.grounds:hover,
-.grounds:focus {
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-}
-.instant:hover,
-.instant:focus {
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-}
-.accessories:hover,
-.accessories:focus {
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-}
+
+
 @media only screen and (max-width: 900px) {
   .pmain {
     display: grid;
@@ -298,5 +316,16 @@ h1 {
   .img-container {
     margin-top: -15%;
     height: 300px;
+  }
+  .product-name {
+    background-color: rgb(255, 255, 255);
+    height: 150px;
+    margin-top: -15%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 10px;
+    
+    
   }
 }
