@@ -99,18 +99,18 @@ html {
   background-color: black;
   color: antiquewhite;
 }
-
-.two {
-  background-color: rgb(202, 202, 202);
-  color: black;
-  grid-area: two;
-  max-height: 30vh;
-}
 .one {
   background-color: rgb(202, 202, 202);
   color: black;
   grid-area: one;
   max-height: 30vh;
+}
+.two {
+  background-color: #3a3a3a;
+  color: white;
+  grid-area: two;
+  max-height: 30vh;
+  padding: 3%;
 }
 .products:hover,
 .products:focus {
