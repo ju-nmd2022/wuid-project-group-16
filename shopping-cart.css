@@ -169,4 +169,9 @@ th:last-child {
   .cart-info p {
     display: none;
   }
+
+  .cart-page {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
 }
