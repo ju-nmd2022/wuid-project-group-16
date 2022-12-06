@@ -144,6 +144,9 @@ h1 {
   background: #e37a2d;
   border-radius: 4px;
 }
+.slide-menu {
+  display: none;
+}
 
 @media only screen and (min-width: 2000px) {
   h1 {
