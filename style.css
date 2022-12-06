@@ -182,10 +182,148 @@ h1 {
     justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding: 2.5rem;
     font-style: bold;
     grid-area: nav;
     max-height: 5vh;
+    position: relative;
+  }
+  .nav-left {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-item {
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+    display: none;
+  }
+
+  .nav-item:hover {
+    color: orange;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .nav-icon {
+    color: white;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    display: none;
+  }
+
+  .nav-icon-wrapper {
+    margin-left: 1.5rem;
+  }
+
+  .nav-logo {
+    max-width: 70px;
+    min-height: 60px;
+
+    margin-left: 1vw;
+    content: url("/logos/logo-simple-white.svg");
+  }
+  .hamburger-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    width: 40px;
+    height: 40px;
+  }
+  .hamburger {
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: all 0.5s ease-in-out;
+  }
+  .hamburger::before {
+    transform: translateY(-10px);
+  }
+  .hamburger::after {
+    transform: translateY(10px);
+  }
+  .hamburger-btn.open .hamburger {
+    transform: translate(20px);
+    background: transparent;
+  }
+  .hamburger-btn.open .hamburger::before {
+    transform: rotate(45deg) translate(-15px, 15px);
+  }
+  .hamburger-btn.open .hamburger::after {
+    transform: rotate(-45deg) translate(-15px, -15px);
+  }
+  .slide-menu {
+    position: relative;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: rgba(2, 2, 2, 1);
+    z-index: 2;
+    display: none;
+  }
+  .slide-menu.open-slide {
+    display: flex;
+    animation-name: slide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  .slide-nav {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    margin-left: 15px;
+  }
+  .slide-icons,
+  .pages {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15pt;
+    margin-top: 50px;
+  }
+  .slide-nav-item {
+    color: white;
+    text-decoration: none;
+  }
+  .slide-nav-item:hover {
+    color: orange;
+    text-decoration: underline;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(20%);
   }
 }
 
@@ -199,7 +337,7 @@ h1 {
     "header header header header"
     " . . . . "
     "pmain pmain pmain pmain";
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 .all-products {
   color: #ffffff;
@@ -241,10 +379,8 @@ h1 {
   flex-direction: row-reverse;
   justify-content: space-between;
   padding: 20px;
-  
-  
 }
-.add{
+.add {
   width: 20px;
   height: 20px;
   border-radius: 20px;
@@ -252,29 +388,24 @@ h1 {
   border-color: black;
   border-width: 2px;
 }
-.name-price{
+.name-price {
   color: black;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
-
 }
-.price{
+.price {
   margin-left: 0;
   margin-top: 7px;
-
 }
-.name{
+.name {
   margin: 0;
-
 }
-.header{
+.header {
   grid-area: header;
   background-color: white;
 }
 .header-left {
- 
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
@@ -292,9 +423,7 @@ h1 {
   color: #e37a2d;
   cursor: pointer;
   text-decoration-line: underline;
-  
 }
-
 
 @media only screen and (max-width: 900px) {
   .pmain {
@@ -325,7 +454,5 @@ h1 {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 10px;
-    
-    
   }
 }
