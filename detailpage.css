@@ -7,17 +7,18 @@ html {
 .hcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "nav nav nav nav"
     "header header header header"
-    ". content content ."
-    "main main main main";
-  min-height: 100vh;
+    ". one two ."
+    "footer footer footer footer";
 }
 .content {
+  grid-area: content;
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+
   grid-template-areas: ". one two .";
   justify-content: space-around;
   border-radius: 5px;
@@ -81,7 +82,11 @@ html {
   height: 4rem;
 }
 .header {
+  grid-area: header;
   background-color: white;
+  max-height: 3.5rem;
+}
+.header-left {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
@@ -90,9 +95,15 @@ html {
   padding-inline-start: 2%;
   padding-inline-end: 20%;
   justify-content: space-between;
-  max-height: 3.5rem;
-  grid-area: header;
+  height: 3.5rem;
   align-items: center;
+  width: 50%;
+}
+.products:hover,
+.products:focus {
+  color: #e37a2d;
+  cursor: pointer;
+  text-decoration-line: underline;
 }
 
 .footer {
@@ -111,34 +122,4 @@ html {
   grid-area: two;
   max-height: 30vh;
   padding: 3%;
-}
-.products:hover,
-.products:focus {
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-}
-.beans:hover,
-.beans:focus {
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-}
-.grounds:hover,
-.grounds:focus {
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-}
-.instant:hover,
-.instant:focus {
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-}
-.accessories:hover,
-.accessories:focus {
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
 }
