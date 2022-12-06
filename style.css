@@ -233,7 +233,7 @@ h1 {
     min-height: 60px;
 
     margin-left: 1vw;
-    content: url("/logos/logo-simple-white.svg");
+    content: url("logos/logo-simple-white.svg");
   }
   .hamburger-btn {
     position: relative;
