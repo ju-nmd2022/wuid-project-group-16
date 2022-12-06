@@ -3,8 +3,14 @@ html {
   margin: 0;
   background-color: black;
   font-family: Helvetica, sans-serif;
+  overflow-x: hidden;
+
   /* here we have to change it so that it's some kinda google font other whise it doesnt work on windows and linux */
 }
+html.html-noscroll {
+  overflow-y: hidden;
+}
+
 .hcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -289,6 +295,8 @@ h1 {
     background-color: rgba(2, 2, 2, 1);
     z-index: 2;
     display: none;
+    border-radius: 0px 20px;
+    padding-left: 30%;
   }
   .slide-menu.open-slide {
     display: flex;
@@ -331,6 +339,7 @@ h1 {
 }
 
 /* HOME */
+
 .pcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -427,6 +436,9 @@ h1 {
   cursor: pointer;
   text-decoration-line: underline;
 }
+.pslide-menu {
+  display: none;
+}
 
 @media only screen and (max-width: 900px) {
   .pmain {
@@ -435,6 +447,11 @@ h1 {
     grid-template-columns: repeat(auto-fit, 300px);
     gap: 3rem;
     justify-content: center;
+  }
+  .header {
+    grid-area: header;
+    background-color: white;
+    display: none;
   }
   .pcontent {
     background-color: rgb(202, 202, 202);
@@ -457,5 +474,53 @@ h1 {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 10px;
+  }
+
+  .pslide-menu {
+    position: relative;
+
+    background-color: rgba(2, 2, 2, 1);
+    display: none;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    z-index: 2;
+    height: 100vh;
+    border-radius: 0px 20px;
+    padding-left: 30%;
+  }
+  .pslide-menu.popen-slide {
+    display: flex;
+    animation-name: slide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  .slide-nav {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    margin-left: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+  }
+  .slide-icons,
+  .pages {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15pt;
+    margin-top: 50px;
+  }
+  .slide-nav-item {
+    color: white;
+    text-decoration: none;
+  }
+  .slide-nav-item:hover {
+    color: orange;
+    text-decoration: underline;
   }
 }
