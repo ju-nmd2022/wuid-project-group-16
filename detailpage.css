@@ -134,7 +134,7 @@ html {
   color: #9a9a9a;
 }
 .headline1 {
-  font-size: 40px;
+  font-size: 25pt;
   font-weight: bold;
 }
 .price {
@@ -177,7 +177,7 @@ html {
   border-color: transparent;
 }
 .price2 {
-  width: 92%;
+  width: 93%;
   margin-top: 4px;
   background-color: #e37a2d;
   color: white;
