@@ -156,3 +156,22 @@ html {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
 }
+.subscription {
+  width: 45%;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  border-color: black;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 3%;
+  font-size: 12pt;
+}
+.number {
+  width: 45%;
+  border-radius: 20px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 12pt;
+  border-color: transparent;
+}
