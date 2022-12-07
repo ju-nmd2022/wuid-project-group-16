@@ -31,6 +31,10 @@ html {
   max-height: 7vh;
 }
 
+.nav a {
+  text-decoration: none;
+}
+
 .nav-left {
   display: flex;
   align-items: center;
@@ -92,24 +96,26 @@ html {
 .cart-page {
   margin: 80px auto;
   /* width: 70vw; */
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
+  border-radius: 10px;
 }
 
 th {
   text-align: left;
   padding: 5px;
   background: #e37a2d;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 td {
   padding: 10px 5px;
+  color: rgb(255, 255, 255);
 }
 
 td input {
@@ -161,6 +167,27 @@ td:last-child {
 
 th:last-child {
   text-align: right;
+}
+
+.continue-btn {
+  color: white;
+  background: #e37a2d;
+  border-radius: 15px;
+  padding: 10px 30px;
+  border: none;
+  font-size: 16px;
+}
+
+.continue-btn:hover {
+  cursor: pointer;
+}
+
+.btn-td {
+  width: 100%;
+  max-width: 310px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
 }
 
 /* MEDIA QUERY less than 800px wide */

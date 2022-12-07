@@ -7,6 +7,7 @@
     <title>Umble Beans</title>
     <link rel="stylesheet" href="shopping-cart.css" />
     <link rel="icon" href="logos/logo-simple-white.svg" />
+    <!-- <link rel="script" href="remove-cart-items.js" defer> -->
   </head>
   <body>
     <div class="container">
@@ -48,7 +49,7 @@
               <th>Quantity</th>
               <th>Subtotal</th>
             </tr>
-            <tr>
+            <tr id="breakfastBlend">
               <td>
                 <div class="cart-info">
                   <img src="./project-mockups/breakfast-blend.jpg" alt="" />
@@ -56,14 +57,14 @@
                     <p>Breakfast blend</p>
                     <small>$18.00</small>
                     <br />
-                    <a href="">Remove</a>
+                    <a id="removeButton1">Remove</a>
                   </div>
                 </div>
               </td>
               <td><input type="number" value="1" /></td>
               <td>$18.00</td>
             </tr>
-            <tr>
+            <tr id="chocolateFlavoured">
               <td>
                 <div class="cart-info">
                   <img src="./project-mockups/chocolate-falvoured.jpg" alt="" />
@@ -71,14 +72,14 @@
                     <p>Chocolate flavoured</p>
                     <small>$18.00</small>
                     <br />
-                    <a href="">Remove</a>
+                    <a  id="removeButton2">Remove</a>
                   </div>
                 </div>
               </td>
               <td><input type="number" value="1" /></td>
               <td>$18.00</td>
             </tr>
-            <tr>
+            <!-- <tr>
               <td>
                 <div class="cart-info">
                   <img
@@ -95,7 +96,7 @@
               </td>
               <td><input type="number" value="1" /></td>
               <td>$18.00</td>
-            </tr>
+            </tr> -->
           </table>
           <div class="total-price">
             <table>
@@ -111,10 +112,16 @@
                 <td>Total</td>
                 <td>$46.00</td>
               </tr>
+              <tr>
+                <td class="btn-td">
+                  <a class="continue-btn" href="./checkout.html">Continue</a>
+                </td>
+              </tr>
             </table>
           </div>
         <!-- </div> -->
       </main>
     </div>
+    <script src="remove-cart-items.js"></script>
   </body>
 </html>
