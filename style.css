@@ -131,10 +131,9 @@ html.html-noscroll {
   border-radius: 19px;
   color: #ffffff;
   cursor: pointer;
-  margin-top: 50px;
 }
 h1 {
-  font-size: 60pt;
+  font-size: 50pt;
 }
 .intro {
   max-width: 400px;
@@ -163,6 +162,7 @@ h1 {
   h1 {
     font-size: 35pt;
   }
+
   .main {
     display: grid;
     grid-area: main;
@@ -416,6 +416,9 @@ h1 {
 .header {
   grid-area: header;
   background-color: white;
+  display: flex;
+  justify-content: space-between;
+  min-height: 5vh;
 }
 .header-left {
   color: black;
@@ -424,11 +427,28 @@ h1 {
   display: flex;
   justify-content: flex-start;
   padding-inline-start: 2%;
-  padding-inline-end: 20%;
   justify-content: space-between;
   height: 3.5rem;
   align-items: center;
   width: 50%;
+}
+.header-right {
+  display: flex;
+  padding-inline-end: 5%;
+  align-items: center;
+  gap: 10px;
+}
+.filter,
+.sort {
+  width: 109px;
+  height: 34px;
+  left: 987px;
+  top: 145px;
+  border: 1px solid #7c7c7c;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .products:hover,
 .products:focus {
@@ -439,18 +459,38 @@ h1 {
 .pslide-menu {
   display: none;
 }
+.small-header {
+  display: none;
+}
 
 @media only screen and (max-width: 900px) {
   .pmain {
-    display: grid;
-    grid-area: pmain;
     grid-template-columns: repeat(auto-fit, 300px);
     gap: 3rem;
-    justify-content: center;
   }
-  .header {
-    grid-area: header;
-    background-color: white;
+  .small-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline-start: 10%;
+    padding-inline-end: 10%;
+    font-weight: bolder;
+    font-size: 13pt;
+  }
+  .small-header-right,
+  .small-header-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .small-downarrow {
+    height: 8px;
+  }
+  .small-filter {
+    height: 16px;
+  }
+  .header-left,
+  .header-right {
     display: none;
   }
   .pcontent {
