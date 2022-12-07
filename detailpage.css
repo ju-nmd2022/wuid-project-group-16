@@ -131,14 +131,14 @@ html {
 }
 
 .footer {
-  background-color: black;
   color: antiquewhite;
+  height: 100px;
+  grid-area: footer;
 }
 .one {
   background-color: black;
   color: black;
   grid-area: one;
-
   display: flex;
   justify-content: flex-end;
 }
@@ -159,6 +159,7 @@ html {
   height: 40vw;
   align-items: center;
   display: flex;
+  box-shadow: 20px 20px 200px 100px rgba(121, 121, 121, 0.2);
 }
 .two-content {
   padding: 5%;
