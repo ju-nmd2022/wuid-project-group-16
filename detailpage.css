@@ -124,7 +124,7 @@ html {
   background-color: #3a3a3a;
   color: white;
   grid-area: two;
-  max-height: 70vhpx;
+  max-height: 70vh;
   padding-right: 11%;
   padding-left: 3%;
   border-top-right-radius: 10px;
@@ -163,18 +163,51 @@ html {
   background-color: black;
   border-radius: 20px;
   border-color: black;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   padding-left: 3%;
+  padding-right: 3%;
   font-size: 12pt;
 }
 .number {
   width: 45%;
   border-radius: 20px;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   font-size: 12pt;
   border-color: transparent;
+}
+.price2 {
+  width: 92%;
+  margin-top: 4px;
+  background-color: #e37a2d;
+  color: white;
+  border-radius: 20px;
+  border-color: #e37a2d;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 12pt;
+}
+.price2:hover {
+  background-color: #9a9a9a;
+  border-color: #9a9a9a;
+  color: white;
+}
+.price2 {
+  width: 92%;
+  margin-top: 4px;
+  background-color: #e37a2d;
+  color: white;
+  border-radius: 20px;
+  border-color: #e37a2d;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 12pt;
+}
+.price2:hover {
+  background-color: #9a9a9a;
+  border-color: #9a9a9a;
+  color: white;
 }
 .small-header {
   display: none;
