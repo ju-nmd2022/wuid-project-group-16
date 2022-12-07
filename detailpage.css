@@ -428,3 +428,18 @@ html {
     transform: translateX(20%);
   }
 }
+@media only screen and (max-width: 700px) {
+  .content {
+    grid-template-areas:
+      "one one one one"
+      "two two two two";
+  }
+  .hcontainer {
+    grid-template-rows: auto auto 0px auto auto;
+  }
+  .breakfast,
+  .two {
+    border-radius: 0;
+    width: 100%;
+  }
+}
