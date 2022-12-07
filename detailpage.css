@@ -7,20 +7,22 @@ html {
 .hcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 5fr 1fr;
+  grid-template-rows: auto auto 100px auto auto;
   grid-template-areas:
     "nav nav nav nav"
     "header header header header"
+    ". . . ."
     "content content content content"
     "footer footer footer footer";
-  height: 100vh;
 }
 .content {
   grid-area: content;
   display: grid;
-  grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+  grid-template-columns: 10vw 40vw 40vw 10vw;
   grid-template-areas: ". one two .";
   justify-content: space-around;
+  align-items: center;
+  height: 100%;
 }
 
 /* NAVIGATION */
@@ -87,7 +89,9 @@ html {
 .header {
   grid-area: header;
   background-color: white;
-  max-height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  min-height: 5vh;
 }
 .header-left {
   color: black;
@@ -96,11 +100,28 @@ html {
   display: flex;
   justify-content: flex-start;
   padding-inline-start: 2%;
-  padding-inline-end: 20%;
   justify-content: space-between;
   height: 3.5rem;
   align-items: center;
   width: 50%;
+}
+.header-right {
+  display: flex;
+  padding-inline-end: 5%;
+  align-items: center;
+  gap: 10px;
+}
+.filter,
+.sort {
+  width: 109px;
+  height: 34px;
+  left: 987px;
+  top: 145px;
+  border: 1px solid #7c7c7c;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .products:hover,
 .products:focus {
@@ -117,18 +138,30 @@ html {
   background-color: black;
   color: black;
   grid-area: one;
-  max-height: 70vh;
-  border-bottom-left-radius: 10%;
+
+  display: flex;
+  justify-content: flex-end;
+}
+.breakfast {
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  max-width: 700px;
 }
 .two {
   background-color: #3a3a3a;
   color: white;
   grid-area: two;
-  max-height: 70vh;
-  padding-right: 11%;
-  padding-left: 3%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  width: 40vw;
+  max-height: 700px;
+  height: 40vw;
+  align-items: center;
+  display: flex;
+}
+.two-content {
+  padding: 5%;
 }
 .breadcrumbs {
   font-size: 13px;
@@ -148,6 +181,7 @@ html {
 }
 .jamaica {
   float: right;
+  width: 20px;
 }
 .info {
   color: #9a9a9a;
@@ -158,7 +192,7 @@ html {
   border-top-left-radius: 10px;
 }
 .subscription {
-  width: 45%;
+  width: 60%;
   color: white;
   background-color: black;
   border-radius: 20px;
@@ -170,7 +204,7 @@ html {
   font-size: 12pt;
 }
 .number {
-  width: 45%;
+  width: 30%;
   border-radius: 20px;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -214,6 +248,46 @@ html {
 }
 .slide-menu {
   display: none;
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background: black;
+  margin-block: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e37a2d;
+  border-radius: 4px;
+}
+@media only screen and (max-width: 1200px) {
+  .content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 10vw 40vw 40vw 10vw;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      ". one one ."
+      ". two two .";
+    height: fit-content;
+    justify-items: center;
+  }
+  .one {
+    justify-content: center;
+    border-bottom-left-radius: 0;
+  }
+  .two {
+    width: 80vw;
+    height: fit-content;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    max-width: 700px;
+  }
+
+  .breakfast {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
 }
 @media only screen and (max-width: 900px) {
   .nav {
