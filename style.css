@@ -35,6 +35,10 @@ html.html-noscroll {
   max-height: 7vh;
 }
 
+.nav a {
+  text-decoration: none;
+}
+
 .nav-left {
   display: flex;
   align-items: center;
