@@ -241,7 +241,7 @@ h1 {
   .hamburger-btn.open .hamburger::after {
     transform: rotate(-45deg) translate(-15px, -15px);
   }
-  /*Slide menu triggered by js by pressing the hamburger-btn*/
+  /*Slide menu triggered from js by pressing the hamburger-btn*/
   .slide-menu {
     position: relative;
     display: grid;
