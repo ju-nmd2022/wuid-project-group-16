@@ -1,6 +1,5 @@
 const hBtn = document.querySelector(".hamburger-btn");
 const slide = document.querySelector(".slide-menu");
-
 let menuOpen = false;
 
 hBtn.addEventListener("click", () => {
