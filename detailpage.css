@@ -17,8 +17,7 @@ html {
 .content {
   grid-area: content;
   display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-
+  grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
   grid-template-areas: ". one two .";
   justify-content: space-around;
   border-radius: 5px;
@@ -118,12 +117,28 @@ html {
   background-color: rgb(202, 202, 202);
   color: black;
   grid-area: one;
-  max-height: 30vh;
+  max-height: 70vh;
 }
 .two {
   background-color: #3a3a3a;
   color: white;
   grid-area: two;
-  max-height: 30vh;
+  max-height: 70vh;
   padding: 3%;
+}
+.breadcrumbs {
+  font-size: 13px;
+  color: #9a9a9a;
+}
+.headline1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.price {
+  font-size: 15pt;
+  margin-top: -20px;
+}
+.information {
+  font-size: 11pt;
+  color: #9a9a9a;
 }
