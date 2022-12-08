@@ -375,6 +375,9 @@ html.html-noscroll {
   .nav-item {
     display: none;
   }
+  .nav-right {
+    padding-right: 0%;
+  }
 
   .nav-icon {
     display: none;
