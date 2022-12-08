@@ -3,6 +3,10 @@ html {
   margin: 0;
   background-color: black;
   font-family: Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+html.html-noscroll {
+  overflow-y: hidden;
 }
 .hcontainer {
   display: grid;
@@ -247,7 +251,7 @@ html {
 .small-header {
   display: none;
 }
-.slide-menu {
+.pslide-menu {
   display: none;
 }
 ::-webkit-scrollbar {
@@ -354,7 +358,7 @@ html {
     transform: rotate(-45deg) translate(-15px, -15px);
   }
   /*Slide menu triggered from js by pressing the hamburger-btn*/
-  .slide-menu {
+  .pslide-menu {
     position: relative;
     display: grid;
     grid-column-start: 1;
@@ -367,7 +371,7 @@ html {
     border-radius: 0px 20px;
     padding-left: 30%;
   }
-  .slide-menu.open-slide {
+  .pslide-menu.popen-slide {
     display: flex;
     animation-name: slide;
     animation-duration: 0.5s;
