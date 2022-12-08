@@ -15,7 +15,7 @@
           <nav class="slide-nav">
             <div class="slide-icons">
               <a class="slide-nav-item" href="">Search</a>
-              <a class="slide-nav-item" href="">Shopping cart</a>
+              <a class="slide-nav-item" href="shopping-cart.html">Shopping cart</a>
               <a class="slide-nav-item" href="">Account</a>
             </div>
             <div class="pages">
@@ -46,8 +46,11 @@
               <a class="nav-icon">
                 <img src="Images/search.svg" alt="search-icon" />
               </a>
-              <a class="nav-icon" href="./shopping-cart.html">
-                <img src="Images/cart.svg" alt="shopping-cart-icon" />
+              <a class="shopping-cart-container" class="nav-icon" href="./shopping-cart.html">
+                <div class="counter-container">
+                  <span class="cart-counter-span" id="cartCounter">1</span>
+                    <img src="./icons/cart.svg" alt="shopping cart icon">
+                </div>
               </a>
               <a class="nav-icon">
                 <img src="Images/user.svg" alt="user-profile-icon" />
@@ -122,7 +125,7 @@
             <br />
             <td><input type="number" value="1" class="number" /></td>
             <button class="subscription">Subscription</button>
-            <button class="price2">Add to cart - $18</button>
+            <button class="price2" id="addToCartAnimation">Add to cart - $18</button>
           </section>
           
         </div>
@@ -131,5 +134,6 @@
         </div>
       </div>
     </main>
+    <script src="add-to-cart.js"></script>
   </body>
 </html>
