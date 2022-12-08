@@ -515,3 +515,53 @@ html.html-noscroll {
     width: 100%;
   }
 }
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+footer p {
+  color: rgb(81, 81, 81);
+}
+
+.links-wrapper {
+  display: flex;
+  display: row;
+  justify-content: center;
+}
+
+.link-wrapper {
+  color: rgb(154, 154, 154);
+  padding: 3rem;
+  width: 15rem;
+  padding-left: 7rem;
+}
+
+.link-wrapper a {
+  text-decoration: none;
+  color: rgb(154, 154, 154);
+}
+
+.socials-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-img {
+  width: 2rem;
+  margin: 1rem;
+}
+
+.LLC-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+  footer {
+    display: none;
+  }
+}

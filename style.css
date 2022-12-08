@@ -23,7 +23,7 @@ html.html-noscroll {
   padding: 2.5rem;
   font-style: bold;
   grid-area: nav;
-  max-height: 7vh;
+  max-height: 6vh;
 }
 
 .nav a {
@@ -82,6 +82,7 @@ html.html-noscroll {
 
 .main {
   display: grid;
+  height: 100vh;
   grid-area: main;
   background-color: rgb(0, 0, 0);
   grid-template-columns: 1fr 1fr;
@@ -92,9 +93,10 @@ html.html-noscroll {
     " . chatbox ";
   justify-items: center;
   color: #ffffff;
-  background-image: url("Images/start-background.png");
+  background-image: url("Images/background-unsplash-4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  /* background-position: 0.1rem; */
   align-items: flex-start;
   padding-left: 5%;
 }
@@ -131,11 +133,13 @@ html.html-noscroll {
   left: 1056px;
   top: 471px;
 
-  background: #5a5a5a;
-  border: 2px solid #ffffff;
+  background: #000000;
+  border: 2px solid #505050;
   border-radius: 19px;
   color: #ffffff;
   cursor: pointer;
+
+  margin-top: 1rem;
 }
 h1 {
   font-size: 50pt;
@@ -173,7 +177,7 @@ h1 {
     grid-template-areas:
       "  main_content . "
       " . chatbox ";
-    background-image: url("Images/start-background.png");
+    background-image: url("Images/background-unsplash-2.jpg");
   }
   .main_content {
     max-width: 500px;
@@ -496,5 +500,55 @@ h1 {
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
+  }
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+footer p {
+  color: rgb(81, 81, 81);
+}
+
+.links-wrapper {
+  display: flex;
+  display: row;
+  justify-content: center;
+}
+
+.link-wrapper {
+  color: rgb(154, 154, 154);
+  padding: 3rem;
+  width: 15rem;
+  padding-left: 7rem;
+}
+
+.link-wrapper a {
+  text-decoration: none;
+  color: rgb(154, 154, 154);
+}
+
+.socials-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-img {
+  width: 2rem;
+  margin: 1rem;
+}
+
+.LLC-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+  footer {
+    display: none;
   }
 }
