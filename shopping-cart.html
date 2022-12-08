@@ -7,10 +7,26 @@
     <title>Umble Beans</title>
     <link rel="stylesheet" href="shopping-cart.css" />
     <link rel="icon" href="logos/logo-simple-white.svg" />
-    <!-- <link rel="script" href="remove-cart-items.js" defer> -->
+    <script src="shopping-cart.js" defer></script>
   </head>
   <body>
-    <div class="container">
+    
+    <div class="hcontainer">
+      <!-- Small screen slide menu -->
+      <div class="pslide-menu">
+        <nav class="slide-nav">
+          <div class="slide-icons">
+            <a class="slide-nav-item" href="">Search</a>
+            <a class="slide-nav-item" href="shopping-cart.html">Shopping cart</a>
+            <a class="slide-nav-item" href="">Account</a>
+          </div>
+          <div class="pages">
+            <a class="slide-nav-item" href="product-page.html">Shop</a>
+            <a class="slide-nav-item" href="">About us</a>
+            <a class="slide-nav-item" href="">Contact</a>
+          </div>
+        </nav>
+      </div>
       <!-- HEADER -->
       <nav class="nav">
         <div class="nav-left">
@@ -23,6 +39,9 @@
           </a>
         </div>
         <div class="nav-right">
+          <div class="hamburger-btn">
+            <div class="hamburger"></div>
+          </div>
           <a href="product-page.html" class="nav-item">Shop</a>
           <a class="nav-item">About us</a>
           <a class="nav-item">Contact</a>
@@ -40,7 +59,7 @@
         </div>
       </nav>
       <!-- CONTENT -->
-      <!-- <main class="main"> -->
+      <main class="main">
         <!-- cart items details -->
         <div class="small-container cart-page">
           <table>
@@ -122,6 +141,6 @@
         <!-- </div> -->
       </main>
     </div>
-    <script src="remove-cart-items.js"></script>
+    
   </body>
 </html>
