@@ -398,6 +398,11 @@ h1 {
   align-items: center;
   width: 50%;
 }
+
+.category-bar {
+  margin-left: 2rem;
+}
+
 .header-right {
   display: flex;
   padding-inline-end: 5%;
