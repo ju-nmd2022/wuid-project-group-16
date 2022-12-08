@@ -178,7 +178,7 @@ h1 {
     grid-template-areas:
       "  main_content main_content "
       " . chatbox ";
-    background-image: url("Images/background.jpg");
+    background-image: url("Images/background-phone.jpg");
   }
   .main_content {
     max-width: 500px;
