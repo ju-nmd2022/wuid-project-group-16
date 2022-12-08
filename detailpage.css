@@ -305,22 +305,6 @@ html {
   border-color: #9a9a9a;
   color: white;
 }
-.price2 {
-  width: 92%;
-  margin-top: 4px;
-  background-color: #e37a2d;
-  color: white;
-  border-radius: 20px;
-  border-color: #e37a2d;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  font-size: 12pt;
-}
-.price2:hover {
-  background-color: #9a9a9a;
-  border-color: #9a9a9a;
-  color: white;
-}
 .small-header {
   display: none;
 }
