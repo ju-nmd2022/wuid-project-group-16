@@ -119,6 +119,7 @@ html {
   grid-area: one;
   max-height: 70vh;
   border-bottom-left-radius: 10%;
+  margin-top: 2rem;
 }
 .two {
   background-color: #3a3a3a;
@@ -129,6 +130,7 @@ html {
   padding-left: 3%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  margin-top: 2rem;
 }
 .breadcrumbs {
   font-size: 13px;
