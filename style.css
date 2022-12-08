@@ -201,6 +201,8 @@ h1 {
     min-height: 60px;
     content: url("logos/logo-simple-white.svg");
   }
+  .nav-right {
+  }
 
   .modern_h1 {
     grid-area: main-content;

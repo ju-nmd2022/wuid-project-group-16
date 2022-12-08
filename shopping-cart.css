@@ -208,6 +208,9 @@ th:last-child {
   .shopping-cart-container {
     display: none;
   }
+  .nav-right {
+    padding: 0;
+  }
 
   /*The hamburger menu was implemented from codeSTACKr's youtube video: https://www.youtube.com/watch?v=dIyVTjJAkLw&ab_channel=codeSTACKr*/
   .hamburger-btn {
