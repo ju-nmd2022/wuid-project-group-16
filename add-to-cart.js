@@ -1,3 +1,4 @@
+// based on https://www.youtube.com/watch?v=Pt8f3GwD3N8&t=42s
 let count = 0;
 
 const cartCounter = document.getElementById("cartCounter");
