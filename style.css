@@ -40,6 +40,7 @@ html.html-noscroll {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-right: 1.5rem;
 }
 
 .nav-item {
@@ -177,7 +178,7 @@ h1 {
     grid-template-areas:
       "  main_content . "
       " . chatbox ";
-    background-image: url("Images/background-unsplash-2.jpg");
+    background-image: url("Images/background.jpg");
   }
   .main_content {
     max-width: 500px;
@@ -555,5 +556,22 @@ footer p {
 @media only screen and (max-width: 900px) {
   footer {
     display: none;
+  }
+}
+
+/* HEADER ANIMATION */
+.header-animation {
+  animation-name: header-animation;
+  animation-duration: 800ms;
+  animation-timing-function: cubic-bezier(0.52, 0.15, 0, 1);
+  animation-iteration-count: 1;
+}
+
+@keyframes header-animation {
+  0% {
+    transform: translateY(-12vw);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

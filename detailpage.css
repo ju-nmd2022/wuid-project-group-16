@@ -57,6 +57,7 @@ html.html-noscroll {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-right: 1.5rem;
 }
 
 .nav-item {
@@ -185,6 +186,7 @@ html.html-noscroll {
   height: 3.5rem;
   align-items: center;
   width: 50%;
+  margin-left: 2rem;
 }
 .header-right {
   display: flex;
