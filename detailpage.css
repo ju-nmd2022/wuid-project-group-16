@@ -70,12 +70,89 @@ html {
 
 .nav-icon {
   color: white;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .nav-icon-wrapper {
   margin-left: 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+/* shopping cart animation */
+.shopping-cart-container {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.counter-container {
+  border-radius: 1px solid red;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.counter-container svg {
+  width: 3rem;
+  color: white;
+}
+
+.cart-counter-span {
+  user-select: none;
+  position: absolute;
+  background-color: #ff4754;
+  text-decoration: none;
+  color: white;
+  width: 0.9rem;
+  height: 0.9rem;
+  font-size: 0.5rem;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -0.5rem;
+  right: -0.5rem;
+}
+
+.counter-container span:not(.animated-counter) {
+  display: none;
+}
+
+.counter-container span .animated-counter {
+  animation: count 0.4s ease-in-out;
+}
+@keyframes count {
+  0% {
+    top: 0.2rem;
+    right: 1.2rem;
+    transform: 120deg;
+  }
+  25% {
+    top: -0.2rem;
+    right: -1.2rem;
+    transform: 80deg;
+  }
+  50% {
+    top: -0.4rem;
+    right: -0.6rem;
+    transform: 60deg;
+  }
+  75% {
+    top: -0.4rem;
+    right: -1.8rem;
+    transform: 120deg;
+  }
+  100% {
+    top: -0.5rem;
+    right: -0.5rem;
+    transform: 0deg;
+  }
 }
 
 .nav-logo {
@@ -308,6 +385,11 @@ html {
     min-height: 60px;
     content: url("logos/logo-simple-white.svg");
   }
+
+  .shopping-cart-container {
+    display: none;
+  }
+
   /*The hamburger menu was implemented from codeSTACKr's youtube video: https://www.youtube.com/watch?v=dIyVTjJAkLw&ab_channel=codeSTACKr*/
   .hamburger-btn {
     position: relative;
