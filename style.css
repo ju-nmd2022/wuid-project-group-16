@@ -93,7 +93,7 @@ html.html-noscroll {
     " . chatbox ";
   justify-items: center;
   color: #ffffff;
-  background-image: url("Images/background.jpg");
+  background-image: url("images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: 0.1rem; */
