@@ -212,7 +212,16 @@ html.html-noscroll {
   cursor: pointer;
   text-decoration-line: underline;
 }
-
+#productsall {
+  color: black;
+  text-decoration: none;
+}
+#productsall:hover,
+#productsall:focus {
+  color: #e37a2d;
+  cursor: pointer;
+  text-decoration-line: underline;
+}
 .footer {
   color: antiquewhite;
   height: 100px;

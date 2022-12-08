@@ -178,7 +178,7 @@ h1 {
     grid-template-areas:
       "  main_content main_content "
       " . chatbox ";
-    background-image: url("Images/small-background.jpg");
+    background-image: url("Images/background-phone.jpg");
   }
   .main_content {
     max-width: 500px;
@@ -444,6 +444,16 @@ h1 {
 }
 .products:hover,
 .products:focus {
+  color: #e37a2d;
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+#productsall {
+  color: black;
+  text-decoration: none;
+}
+#productsall:hover,
+#productsall:focus {
   color: #e37a2d;
   cursor: pointer;
   text-decoration-line: underline;
