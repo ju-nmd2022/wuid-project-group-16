@@ -338,8 +338,12 @@ th:last-child {
   }
 
   .cart-page {
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+
+  .total-price {
+    justify-content: center;
   }
 }
 
