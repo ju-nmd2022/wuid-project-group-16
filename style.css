@@ -176,7 +176,7 @@ h1 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 9fr 1fr;
     grid-template-areas:
-      "  main_content . "
+      "  main_content main_content "
       " . chatbox ";
     background-image: url("Images/background.jpg");
   }
@@ -201,6 +201,24 @@ h1 {
     min-height: 60px;
     content: url("logos/logo-simple-white.svg");
   }
+
+  .modern_h1 {
+    grid-area: main-content;
+    margin-top: 70px;
+  }
+
+  .intro {
+    width: 80vw;
+    font-size: 0.8rem;
+  }
+
+  .btn_more {
+    width: 50vw;
+    height: 3rem;
+    border-radius: 20px;
+    font-size: 1rem;
+  }
+
   /*The hamburger menu was implemented from codeSTACKr's youtube video: https://www.youtube.com/watch?v=dIyVTjJAkLw&ab_channel=codeSTACKr*/
   .hamburger-btn {
     position: relative;
@@ -554,7 +572,10 @@ footer p {
 }
 
 @media only screen and (max-width: 900px) {
-  footer {
+  .links-wrapper {
+    display: none;
+  }
+  .socials-wrapper {
     display: none;
   }
 }
