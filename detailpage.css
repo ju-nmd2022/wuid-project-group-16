@@ -261,7 +261,7 @@ html.html-noscroll {
   color: #9a9a9a;
 }
 .headline1 {
-  font-size: 25pt;
+  font-size: 35pt;
   font-weight: bold;
 }
 .price {
@@ -274,7 +274,8 @@ html.html-noscroll {
 }
 .jamaica {
   float: right;
-  width: 20px;
+  width: 40px;
+  padding-bottom: 5px;
 }
 .info {
   color: #9a9a9a;
