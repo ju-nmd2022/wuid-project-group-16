@@ -24,6 +24,10 @@ html.html-noscroll {
   font-style: bold;
   grid-area: nav;
   max-height: 6vh;
+  animation-name: header-animation;
+    animation-duration: 800ms;
+    animation-timing-function: cubic-bezier(0.52, 0.15, 0, 1);
+    animation-iteration-count: 1;
 }
 
 .nav a {
@@ -173,10 +177,7 @@ h1 {
   }
   .nav {
     max-height: 5vh;
-    animation-name: header-animation;
-    animation-duration: 800ms;
-    animation-timing-function: cubic-bezier(0.52, 0.15, 0, 1);
-    animation-iteration-count: 1;
+    
   }
 
   .nav-item {
